@@ -15,13 +15,13 @@
 # limitations under the License.
 #
 
-# Inherit some common AEX stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 $(call inherit-product, device/samsung/klteduos/full_klteduos.mk)
 
 PRODUCT_DEVICE := klteduos
-PRODUCT_NAME := aosp_klteduos
+PRODUCT_NAME := evolution_klteduos
 
 TARGET_BOOT_ANIMATION_RES := 1080
-EXTENDED_BUILD_TYPE :=UNOFFICIAL
+EVO_BUILD_TYPE :=UNOFFICIAL
