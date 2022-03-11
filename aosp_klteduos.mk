@@ -15,10 +15,13 @@
 # limitations under the License.
 #
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AEX stuff.
+$(call inherit-product, vendor/aosp/common.mk)
 
 $(call inherit-product, device/samsung/klteduos/full_klteduos.mk)
 
 PRODUCT_DEVICE := klteduos
-PRODUCT_NAME := lineage_klteduos
+PRODUCT_NAME := aosp_klteduos
+
+TARGET_BOOT_ANIMATION_RES := 1080
+EXTENDED_BUILD_TYPE :=UNOFFICIAL
